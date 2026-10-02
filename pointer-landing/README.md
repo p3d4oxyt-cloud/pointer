@@ -41,12 +41,20 @@ pointer-landing/
 │   ├── globals.css        # Reset global + estilos do range input
 │   ├── layout.tsx         # Root layout com metadata
 │   └── page.tsx           # ← Toda a landing page (componente único)
+├── assets/
+│   ├── css/preview.css    # Estilos próprios da prévia HTML
+│   └── js/preview.js      # Simulação e calculadora da prévia HTML
+├── preview.html           # Prévia standalone (HTML)
 ├── package.json
 ├── tailwind.config.ts
 ├── next.config.js
 ├── postcss.config.js
 └── tsconfig.json
 ```
+
+## Prévia standalone
+
+Abra `preview.html` no navegador. O HTML, CSS e JavaScript da prévia ficam separados em `assets/css/preview.css` e `assets/js/preview.js`. A aplicação Next.js usa TypeScript/TSX nos arquivos `.ts` e `.tsx` e estilos globais em `app/globals.css`; não há TypeScript embutido na prévia HTML.
 
 ## Seções da Landing Page
 

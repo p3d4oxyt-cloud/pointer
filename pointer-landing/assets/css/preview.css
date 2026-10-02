@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+body {
+  font-family: 'Inter', -apple-system, sans-serif;
+  background: #07090E;
+  color: #fff;
+  margin: 0;
+}
+
+.ambient-gradient--emerald {
+  background: radial-gradient(ellipse, #10B981 0%, transparent 68%);
+}
+
+.ambient-gradient--blue {
+  background: radial-gradient(ellipse, #3B82F6 0%, transparent 65%);
+}
+
+.ambient-gradient--violet {
+  background: radial-gradient(ellipse, #8B5CF6 0%, transparent 65%);
+}
+
+.hero-title-gradient--primary {
+  background-image: linear-gradient(160deg, #fff 0%, #fff 45%, rgba(255, 255, 255, 0.42) 100%);
+}
+
+.hero-title-gradient--secondary {
+  background-image: linear-gradient(160deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.28) 100%);
+}
+
+.hero-title-gradient--tertiary {
+  background-image: linear-gradient(160deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.18) 100%);
+}
+
+.showroom-glow {
+  background: radial-gradient(ellipse at 50% 40%, rgba(16, 185, 129, 0.06) 0%, transparent 65%);
+}
+
+.whatsapp-phone {
+  background: #111B21;
+  min-height: 440px;
+}
+
+.whatsapp-header,
+.whatsapp-input {
+  background: #202C33;
+}
+
+.whatsapp-chat {
+  min-height: 330px;
+  max-height: 330px;
+  background: #111B21;
+}
+
+.whatsapp-typing {
+  background: #005C4B;
+}
+
+.whatsapp-message-input {
+  background: #2A3942;
+}
+
+.calculator-glow {
+  background: radial-gradient(ellipse at 50% 0%, rgba(16, 185, 129, 0.14) 0%, transparent 70%);
+}
+
+.chat-message--patient {
+  background: #1F2C34;
+}
+
+.chat-message--pointer {
+  background: #005C4B;
+}
+
+.about-panel__toggle {
+  cursor: pointer;
+  list-style: none;
+}
+
+.about-panel__toggle::-webkit-details-marker {
+  display: none;
+}
+
+.about-panel__toggle:focus-visible {
+  outline: 2px solid #10B981;
+  outline-offset: -4px;
+  border-radius: 1rem;
+}
+
+.about-panel__icon {
+  transition: transform 180ms ease;
+}
+
+.about-panel[open] .about-panel__icon {
+  transform: rotate(180deg);
+}
+
+input.pointer-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #10B981;
+  cursor: pointer;
+  border: 2px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.15);
+  transition: box-shadow 0.15s ease;
+}
+
+input.pointer-range::-webkit-slider-thumb:hover {
+  box-shadow: 0 0 0 7px rgba(16, 185, 129, 0.2);
+}
+
+input.pointer-range {
+  outline: none;
+}
+
+input.pointer-range {
+  background: linear-gradient(
+    to right,
+    #10B981 var(--progress, 0%),
+    rgba(255, 255, 255, 0.08) var(--progress, 0%)
+  );
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 99px;
+}
+
+@keyframes pulseSlow {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+.pulse-dot {
+  animation: pulseSlow 2s infinite ease-in-out;
+}
+
+@keyframes typingBounce {
+  0%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-4px); }
+}
+
+.dot-1 { animation: typingBounce 1s infinite ease-in-out; }
+.dot-2 { animation: typingBounce 1s infinite ease-in-out 0.18s; }
+.dot-3 { animation: typingBounce 1s infinite ease-in-out 0.36s; }
